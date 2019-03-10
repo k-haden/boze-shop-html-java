@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Boze Space Shipping : Kids</title> <!-- Tab window text -->
+<link type="text/css" rel="stylesheet" href="../css/style.css"> <!-- call css file -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script> <!-- call jquery file -->
+<!-- call javascript to activate mouse over on kid .container, .column -->
+<script type="text/javascript">
+$(document).on('mouseover', '.container .column', function() {
+  $(this).addClass('active').siblings().removeClass('active')})
+</script>
+<!-- end of javascript mouse over function -->
+</head>
+<body>
+  <!--http://css-snippets.com/drop-down-navigation/-->
+  <!-- Dropdown Navigation Bar -->
+    <header>
+      <ul>
+    <li><a href="../home.html">Home Page</a></li> <!-- Home Dropdown Navigation Bar -->
+
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">About</a> <!-- About section in Navigation Bar -->
+      <section class="dropdown-content"> <!-- About section drop down content format call from css -->
+        <a href="../about/us.html">Us</a>
+        <a href="kids.html">Kids</a></section></li>
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Shopping</a> <!-- Shopping section in Navigation Bar -->
+        <section class="dropdown-content"> <!-- Shopping section drop down content format call from css -->
+          <a href="../shopping/food.html">Food</a>
+          <a href="../shopping/clothes.html">Clothes</a>
+        <a href="../shopping/entertainment.html">Entertainment</a>
+      <a href="../shopping/weapon.html">Weapon</a> </section> </li>
+
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Service</a> <!-- Service section in Navigation Bar -->
+            <section class="dropdown-content"> <!-- Service section drop down content format call from css -->
+          <a href="../service/service.html">Location</a>
+          <a href="../service/emergency.html">Emergency</a> </section></li>
+  </ul>
+    </header>
+<section class ="container"> <!-- call container from css file to format kids webpage -->
+
+  <article class = "column active"> <!-- call column active to make columns visable to user -->
+    <aside class="content"> <!-- call content to format column content -->
+    <h1>1</h1> <!-- header for first kid column -->
+    <figure class="box"> <!-- call box format for text box on kids columns -->
+    <h2>Boze Students</h2> <!-- Title of text box on kid column -->
+    <p>These are 5th graders. They are all friendly and active. </p> <!-- text in kid column text box -->
+  </figure>
+</aside>
+<section class= "bg bg1"> </section> <!-- call bg bg1 image from css file for kid column 1 -->
+</article>
+
+  <article class = "column"> <!-- call format for column 1 -->
+    <aside class="content"> <!-- call format for content in column 1 -->
+    <h1>2</h1> <!-- header for 2nd kid column -->
+    <figure class="box"> <!-- call box format for text box on kids columns -->
+    <h2>UWT Group</h2> <!-- Title of text box on kid column -->
+    <p>Information Technology students. Left to right:
+    Ki Tae, Quinn, Kelli and Alex.</p> <!-- text in kid column text box -->
+  </figure>
+</aside>
+<section class= "bg bg2"> </section> <!-- call bg bg2 image from css file for kid column 2 -->
+</article>
+
+  <article class = "column"> <!-- call format for column 3 -->
+    <aside class="content"> <!-- call format for content in column 3 -->
+    <h1>3</h1> <!-- header for 3rd kid column -->
+    <figure class="box"> <!-- call box format for text box on kids columns -->
+    <h2>Quinn's Group</h2> <!-- Title of text box on kid column -->
+    <p>Don't we look silly? We learned so
+    much from each other.</p> <!-- text in kid column text box -->
+  </figure>
+</aside>
+<section class= "bg bg3"> </section> <!-- call bg bg3 image from css file for kid column 3 -->
+</article>
+
+  <article class = "column"> <!-- call format for column 4 -->
+    <aside class="content"> <!-- call format for content in column 4 -->
+    <h1>4</h1> <!-- header for 4th kid column -->
+    <figure class="box"> <!-- call box format for text box on kids columns -->
+    <h2>I love Boze's students</h2> <!-- Title of text box on kid column -->
+    <p>All the boys and girls are so creative and funny.</p> <!-- text in kid column text box -->
+  </figure>
+</aside>
+<section class= "bg bg4"> </section> <!-- call bg bg4 image from css file for kid column 4 -->
+</article>
+</section>
+
+
+</body>
+</html>

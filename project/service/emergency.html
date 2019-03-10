@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boze Space Shipping : Emergency</title> <!-- Tab window text -->
+    <meta name="description" content="This is the description">
+    <link type="text/css" rel="stylesheet" href="../css/style.css"> <!-- call css file -->
+    <script src="../js/store.js" async></script> <!-- call js file -->
+</head>
+<body>
+    <!--http://css-snippets.com/drop-down-navigation/-->
+    <!-- Dropdown Navigation Bar -->
+    <header>
+        <ul>
+            <li><a href="../home.html">Home Page</a></li> <!-- Home Dropdown Navigation Bar -->
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">About</a> <!-- About section in Navigation Bar -->
+                <section class="dropdown-content"> <!-- About section drop down content format call from css -->
+                    <a href="../about/us.html">Us</a>
+                    <a href="../about/kids.html">Kids</a>
+                </section>
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Shopping</a> <!-- Shopping section in Navigation Bar -->
+                <section class="dropdown-content"> <!-- Shopping section drop down content format call from css -->
+                    <a href="../shopping/food.html">Food</a>
+                    <a href="../shopping/clothes.html">Clothes</a>
+                    <a href="../shopping/entertainment.html">Entertainment</a>
+                    <a href="../shopping/weapon.html">Weapon</a>
+                </section>
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Service</a> <!-- Service section in Navigation Bar -->
+                <section class="dropdown-content"> <!-- Service section drop down content format call from css -->
+                    <a href="../service/service.html">Location</a>
+                    <a href="emergency.html">Emergency</a>
+                </section>
+            </li>
+        </ul>
+    </header>
+    <!--https://www.youtube.com/watch?v=YeFzkC2awTM&t=306s-->
+    <!-- JavaScript Shopping Cart Tutorial for Begginers-->
+    <section class="containers content-section"> <!-- call containers content-section format from css file -->
+        <h2 class="section-header">Emergency Supplies</h2> <!-- call section header format from css file for h2-->
+        <article class="shop-items"> <!-- call shop-items format from css file -->
+            <article class="shop-item"> <!-- call shop-item format from css file -->
+                <span class="shop-item-title">Curaplex Stop the BleedÂ® Kit - Basic</span> <!-- call shop-item-title format from css file -->
+                <img class="shop-item-image" alt="Bleed Kit" src="../image/aidkit.jpg"> <!-- call shop-item format from css file and call for image from image file -->
+                <!-- Image retreived from: (http://www.stratodyneinc.com/product-category/stop-the-bleed-kits/?orderby=price)  on (03/03/2019) -->
+                <aside class="shop-item-details"> <!-- call shop-item details format from css file (no details added)-->
+                    <span class="shop-item-price">$75</span> <!-- call shop-item price format from css file and add price-->
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button> <!-- call button format from css file and add button text -->
+                </aside>
+            </article>
+
+            <article class="shop-item"> <!-- call shop-item format from css file -->
+                <span class="shop-item-title">First Aid Only First Responder Kit, Large</span> <!-- call shop-item-title format from css file -->
+                <img class="shop-item-image" alt="Fist Aid Kit" src="../image/first_aid.png"> <!-- call shop-item format from css file and call for image from image file -->
+                <!-- Image retreived from: (https://www.picsbud.com/images/first-aid-ems-15.html)  on (03/03/2019) -->
+                <aside class="shop-item-details"> <!-- call shop-item details format from css file (no details added)-->
+                    <span class="shop-item-price">$50</span> <!-- call shop-item price format from css file and add price-->
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button> <!-- call button format from css file and add button text -->
+                </aside>
+            </article>
+
+            <article class="shop-item"> <!-- call shop-item format from css file -->
+                <span class="shop-item-title">LifeSecure 25 Person Extended Support Emergency Kit</span> <!-- call shop-item-title format from css file -->
+                <img class="shop-item-image" alt="LifeSecure" src="../image/life_secure.jpg"> <!-- call shop-item format from css file and call for image from image file -->
+                <!-- Image retreived from: (https://www.shifflerequip.com/lifesecure-31010-25-person-extended-support-shelter-in-place-kitcr.aspx)  on (03/30/2019) -->
+                <aside class="shop-item-details"> <!-- call shop-item details format from css file (no details added)-->
+                    <span class="shop-item-price">$200</span> <!-- call shop-item price format from css file and add price-->
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button> <!-- call button format from css file and add button text -->
+                </aside>
+            </article>
+        </article>
+
+    </section>
+
+    <section class="containers content-section"> <!-- call containers content-section format from css file -->
+        <h2 class="section-header">CART</h2> <!-- call section header format from css file -->
+        <article class="cart-row"> <!-- call cart-row format from css file -->
+            <span class="cart-item cart-header cart-column">ITEM</span> <!-- call cart-item cart-header cart-column format from css file and name-->
+            <span class="cart-price cart-header cart-column">PRICE</span> <!-- call cart-price cart-header cart-column format from css file and name-->
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span> <!-- call cart-quantity cart-header cart-column format from css file and name-->
+        </article>
+        <article class="cart-items"></article> <!-- list items for cart-item and calls format from css file -->
+        <article class="cart-total"> <!-- list item price for cart-total and calls format from css file -->
+            <strong class="cart-total-title">Total</strong> <!-- call cart-total-title format from css file and name-->
+            <span class="cart-total-price">$0</span> <!-- call cart-total-price format from css file and name-->
+        </article>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button> <!-- call button format from css file and js file then name-->
+    </section>
+</body>
+</html>

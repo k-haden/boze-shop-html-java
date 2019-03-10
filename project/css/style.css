@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700'); /*import fonts from google*/
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania"); /*import fonts from google*/
+
+@font-face {
+    font-family: "Booter - Zero Zero"; /*call a font style */
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"), url("Fonts/Booter - Zero Zero.woff2") format("woff2"); /*call url for a font style */
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    /*font-family: Raleway;*/
+    color: #202020;
+}
+/*set welcome color */
+#welcome {
+	color: #505050;
+}
+/*text line format style */
+.text .line {
+	background-color: #111;
+	color: #fff;
+	padding: 20px;
+}
+/*text format style */
+.text {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: #000;
+}
+/*body html format style */
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-weight:400;
+
+    color:#666;
+}
+/*background image format for homepage and about us page*/
+.pimg1, .door {
+    position:relative;
+    opacity:0.8;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat repeat;
+    background-attachment:fixed;
+}
+/*pimg1 formating and calling for url in image folder*/
+/*setting image urls like this helps clear up coding within each page */
+.pimg1{
+	  /*https://unsplash.com/photos/OrwkD-iWgqg*/
+    background-image: url("../image/background.gif");
+    min-height:100%;
+}
+/*door formating and calling for url in image folder*/
+/*setting image urls like this helps clear up coding within each page */
+.door{
+	/*https://unsplash.com/photos/OrwkD-iWgqg*/
+background-image: url("../image/door.gif");
+    min-height: 100%;
+  }
+/*set up fade function to call for text boxes*/
+.fade{
+    text-align:center;
+    padding:50px 80px;
+}
+/*set up fade-light function to call for text boxes*/
+.fade-light{
+    background-color:#f4f4f4;
+    color:#666;
+}
+/*set up ptext function to call format text within box*/
+.ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color: black;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+/*set up ptext line function to call format text within image*/
+.ptext .line{
+    background-color: #111;
+    color:#fff;
+    padding:20px;
+}
+/*format for mobile viewing */
+@media(max-width:568px){
+    .pimg1, .door{
+        background-attachment:scroll;
+      }
+    }
+/*Navigation Bar*/
+/*nav bar ul list formating*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+/*nav bar li list formating*/
+li {
+    float: left;
+}
+/*nav bar li a list and drop button formating*/
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+/*nav bar hover over links and drop button hover over color formating*/
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: gray;
+        }
+/*nav bar li dropdown display formating*/
+    li.dropdown {
+        display: inline-block;
+    }
+/*nav bar dropdown content display formating*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/*nav bar dropdown content:a display formating*/
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+/*nav bar dropdown content:a hover display formating*/
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+/*nav bar dropdown hover and dropdown content display formating*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*paragraph text alignment*/
+p {
+    text-align: left;
+}
+
+/* Clothes, Food, Enterteninment, Weapon, location, and emegency page formating start*/
+/*https://github.com/WebDevSimplified/Introduction-to-Web-Development/blob/master/Introduction%20to%20JavaScript/Lesson%201/store.html*/
+/*main header format on all shoping and service pages*/
+.main-header {
+    /*background-color: rgba(0, 0, 0, .6);*/
+    background-image: url("Images/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+/*content-section format on all shoping and service pages*/
+.content-section {
+    margin: 1em;
+}
+/*containers format on all shoping and service pages*/
+.containers {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+/*section-header format on all shoping and service pages*/
+.section-header {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    color:darkslateblue;
+    text-align: center;
+    font-size: 4em;
+
+}
+/*item description format on all shoping and service pages*/
+.item-descript {
+    text-align:center;
+}
+/*select button format on all shoping and service pages*/
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+/*selection button header format on all shoping and service pages*/
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+/*button header hover over format on all shoping and service pages*/
+    .btn-header:hover {
+        background-color: rgba(255, 255, 255, .3);
+    }
+/*button play format on all shoping and service pages*/
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+/*button primary format (before clicked on) on all shoping and service pages*/
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+/*button primary hover format on all shoping and service pages*/
+    .btn-primary:hover {
+        background-color: #2D9CDB;
+    }
+/*shop-item format on all shoping and service pages*/
+/*https://github.com/WebDevSimplified/Introduction-to-Web-Development/blob/master/Introduction%20to%20JavaScript/Lesson%201/store.html*/
+.shop-item {
+    margin: 30px;
+}
+/*shop-item title format on all shoping and service pages*/
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+/*shop-item image format on all shoping and service pages*/
+.shop-item-image {
+    height: 250px;
+}
+/*shop-item details format on all shoping and service pages*/
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+/*shop-item price format on all shoping and service pages*/
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+/*shop-items format on all shoping and service pages*/
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*cart header format on all shoping and service pages*/
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+/*cart column format on all shoping and service pages*/
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+/*cart row format on all shoping and service pages*/
+.cart-row {
+    display: flex;
+}
+/*cart item format on all shoping and service pages*/
+.cart-item {
+    width: 45%;
+}
+/*cart price format on all shoping and service pages*/
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+/*cart quantity format on all shoping and service pages*/
+.cart-quantity {
+    width: 35%;
+}
+/*cart item title format on all shoping and service pages*/
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+/*cart item image format on all shoping and service pages*/
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+/*used in store.js file for removing item*/
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+/*used in store.js file for removing item hover color*/
+    .btn-danger:hover {
+        background-color: #CC4C4C;
+    }
+/*cart item quanity input format on all shoping and service pages*/
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+/*cart item last column format on all shoping and service pages*/
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+/*cart item last column cart column border format on all shoping and service pages*/
+    .cart-row:last-child .cart-column {
+        border: none;
+    }
+/*cart total format on all shoping and service pages*/
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+/*cart total title format on all shoping and service pages*/
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+/*cart total price format on all shoping and service pages*/
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+/*button purchase format on all shoping and service pages*/
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+/*kid page formating begins*/
+/*https://www.youtube.com/watch?v=o8DTzU0Iol8*/
+/*format kids webpage using the .container*/
+.container
+{
+  width: 100%;
+  height: 95vh;
+  overflow: hidden;
+}
+/*format kids webpage using the .container .column*/
+.container .column
+{
+  width: 25%; /*change width of columns*/
+  height: 100%; /*change height of columns*/
+  float: left;  /*make everything oriented to the left*/
+  border: 2px solid rgba(0, 0, 0, 0.5); /*set border width and color*/
+  box-sizing: border-box; /*set border sizing*/
+  z-index: 1; /*set z-order to position the element in the high priorotiy, first position*/
+}
+.container .column:last-child /*last column on kids page*/
+{
+  border-right: none; /*no border on the last kid column of page*/
+}
+
+.container .column .content /*change .container . column .content*/
+{
+  position: relative; /*make position relative to page*/
+  height: 100%; /*expand height to full page */
+}
+.container .column .content h1 /*change container column content header 1 format*/
+{
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 15em;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+
+}
+.container .column.active .content .box /*change container column active link content box format*/
+{
+  opacity: 1; /*make it with slight opacity when link is active*/
+}
+.container .column .content .box /*change container text box format*/
+{
+  position: relative;
+  top: 90%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  padding: 40px;
+  background: rgba(255, 255, 255,1);
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.container .column .content .box h2 /*change container column content header 1 format*/
+{
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color: #262626;
+
+}
+
+.container .column .content .box p /*change container column content box p text format*/
+{
+  color: #262626;
+  font-size: 18px;
+
+}
+
+.container .column .bg{ /*change container column bg image format*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1; /*set z-order element in the lower priority position*/
+
+}
+.container .column.active .bg.bg1 /*set image for container column bg bg1 format*/
+{
+  background: url("../image/boze.jpg"); /*call image file from image folder*/
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: 0.5s;
+
+}
+
+.container .column.active .bg.bg2 /*set image for container column bg bg2 format*/
+{
+  background: url("../image/teamp.jpg"); /*call image file from image folder*/
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: 0.5s;
+
+
+}
+
+.container .column.active .bg.bg3 /*set image for container column bg bg3 format*/
+{
+  background: url("../image/silly.jpg"); /*call image file from image folder*/
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: 0.5s;
+
+}
+
+.container .column.active .bg.bg4 /*set image for container column bg bg4 format*/
+{
+  background: url("../image/smile.jpg"); /*call image file from image folder*/
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: 0.5s;
+
+
+}
